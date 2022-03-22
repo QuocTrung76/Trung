@@ -1,4 +1,7 @@
 all:
-	gcc tmp.c -o coincard
+	gcc tmp.c -o coincard -I.
 
-.PHONY: all
+clean:
+	rm -rf coincard
+
+.PHONY: all clean
